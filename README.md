@@ -2,9 +2,28 @@
 
 Bu repoda, LeetCode platformundaki SQL sorularına kendi çözümlerimi ve açıklamalarımı ekliyorum.
 
-001- Combine Two Tables (kolay) - Duplicate emails (kolay) 
+001- Easy
+-- Combine Two Tables
 
-002- Second Highest Salary (orta) 
+-- Duplicate emails
+
+-- Employees Earning More Than Their Managers
+
+-- Customers Who Never Order
+
+-- Delete Duplicate Emails
+
+002- Med
+
+-- Second Highest Salary
+
+-- Nth Highest Salary
+
+-- Rank Scores
+
+-- Consecutive Numbers
+
+-- Department Highest Salary
 
 003- Movie Rating (zor) 
 
