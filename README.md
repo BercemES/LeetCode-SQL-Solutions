@@ -4,11 +4,11 @@ Bu repoda, LeetCode platformundaki SQL sorularına kendi çözümlerimi ve açı
 
 001-combine-two-tables (kolay) - duplicate-emails (kolay) 
 
-003-second-highest-salary (orta) 
+002-second-highest-salary (orta) 
 
-004-movie-rating-analysis (zor) 
+003-movie-rating-analysis (zor) 
 
-005-department-top-earners (zor) 
+004-department-top-earners (zor) 
 
 
 Not:
