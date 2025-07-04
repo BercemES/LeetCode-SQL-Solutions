@@ -1,3 +1,5 @@
+-- Combine Two Tables
+
 CREATE DATABASE Combine_Two_Tables;
 USE Combine_Two_Tables;
 
@@ -27,10 +29,20 @@ values
 select * from person;
 select * from address;
 
-/* Write a solution to report the first name, last name, city, and state of each person in the Person table. 
+/*Write a solution to report the first name, last name, city, and state of each person in the Person table.
 If the address of a personId is not present in the Address table, report null instead.
-Return the result table in any order. */
+Return the result table in any order.*/
+
 #Cozum
 select A.firstName, A.lastName, B.city, B.state from person A
 LEFT JOIN address B
 on A.personId = B.personID;
+
+-- Duplicate Emails
+/*Write a solution to report all the duplicate emails. Note that it's guaranteed that the email field is not NULL.
+Return the result table in any order.*/
+
+#Cozum
+SELECT email from Person
+GROUP BY email
+HAVING COUNT(email) > 1; 
