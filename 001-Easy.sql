@@ -1,4 +1,7 @@
 -- Combine Two Tables
+/*Write a solution to report the first name, last name, city, and state of each person in the Person table.
+If the address of a personId is not present in the Address table, report null instead.
+Return the result table in any order.*/
 
 CREATE DATABASE Combine_Two_Tables;
 USE Combine_Two_Tables;
@@ -29,10 +32,6 @@ values
 select * from person;
 select * from address;
 
-/*Write a solution to report the first name, last name, city, and state of each person in the Person table.
-If the address of a personId is not present in the Address table, report null instead.
-Return the result table in any order.*/
-
 #Cozum
 select A.firstName, A.lastName, B.city, B.state from person A
 LEFT JOIN address B
@@ -47,6 +46,7 @@ SELECT email from Person
 GROUP BY email
 HAVING COUNT(email) > 1;
 
+-- Employees Earning More Than Their Managers
 /*Write a solution to find the employees who earn more than their managers.
 Return the result table in any order.*/
 
@@ -56,6 +56,7 @@ JOIN Employee M
 ON E.managerId = M.id
 WHERE E.salary > M.salary;
 
+-- Customers Who Never Order
 /*Write a solution to find all customers who never order anything.
 Return the result table in any order.*/
 
@@ -64,7 +65,7 @@ SELECT name AS Customers FROM Customers A
 LEFT JOIN Orders B ON A.id = B.CustomerId
 WHERE B.customerId IS NULL;
 
-
+-- Delete Duplicate Emails
 /*Write a solution to delete all duplicate emails, keeping only one unique email with the smallest id.
 For SQL users, please note that you are supposed to write a DELETE statement and not a SELECT one.
 After running your script, the answer shown is the Person table.
